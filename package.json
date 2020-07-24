@@ -1,0 +1,17 @@
+{
+  "name": "welcome-bot",
+  "version": "1.0.0",
+  "description": "discord welcome bot, create by DARWIN",
+  "main": "main.js",
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "discord.js": "^12.2.0",
+    "moment": "^2.27.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "welcome",
+  "license": "ISC"
+}
