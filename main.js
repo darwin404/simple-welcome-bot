@@ -46,9 +46,9 @@ client.on('guildMemberAdd', async member => {
 		≫ ・*If you want to be ready for our server.*
 		≫ ・**CHECK OUT**
 		♛▬▬▬▬▬▬▬▬▬▬◈▬▬▬▬▬▬▬▬▬▬♛
-		<a:6795_rainbowleft:729671060664090634>    <#718272251182710851>
-		<a:6795_rainbowleft:729671060664090634>    <#718265652376240169>
-		<a:6795_rainbowleft:729671060664090634>    <#718275663530033162>
+		<a:6795_rainbowleft:729671060664090634>    <#736600436680687646>
+		<a:6795_rainbowleft:729671060664090634>    <#736600433921097789>
+		<a:6795_rainbowleft:729671060664090634>    <#736600435342835792>
 		♛▬▬▬▬▬▬▬▬▬▬◈▬▬▬▬▬▬▬▬▬▬♛
 			`)
 			welcomeChannel.send(embed).catch(err => console.log(err));
