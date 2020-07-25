@@ -36,7 +36,7 @@ client.on('guildMemberAdd', async member => {
         	  { name: "**\`User\`**", value: `${member}`, inline: true },
 			  { name: "**\`User Joined At\`**", value: `${moment().format("D/M/Y, h:mm")}`, inline: true },
         	)
-        const welcomeChannel = member.guild.channels.cache.find(channel => channel.id === '718264591167258717');
+        const welcomeChannel = member.guild.channels.cache.find(channel => channel.id === '736600432561881129');
         if(welcomeChannel) {
 			welcomeChannel.send(`
 			> • **User:** ${member}
