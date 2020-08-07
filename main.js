@@ -79,4 +79,4 @@ client.on("ready", () => {
   });
   
 
-client.login('NzM2MjEwMDg0OTQxNTI5MTky.XxrfEg.IUypv5U3NNwa0gIs-AC71H7kT-w');
+client.login('NzM2MjEwMDg0OTQxNTI5MTky.XxrfEg.8EcLVu8k5i-KHPiZRnOgQRSQUUk');
