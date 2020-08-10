@@ -25,13 +25,13 @@ client.on('guildMemberAdd', async member => {
 		
         const embed = new Discord.MessageEmbed()
 			.setColor("RANDOM")
-        	.setTitle(`<a:8584_pin:725798073753927761> **WELCOME** <a:8584_pin:725798073753927761>`)
+        	.setTitle(`**WELCOME**`)
         	.setAuthor(member.user.tag, member.user.displayAvatarURL({format: "gif", format: "png", dynamic: true}))
         	.setDescription(`${member} Welcome to **VALORANT MAROC** community, Also if you want to be ready for our server, Check out the important channels.`)
         	.setThumbnail(member.user.displayAvatarURL({format: "gif", format: "png", dynamic: true, size: 1024}))
         	.setTimestamp()
         	.setFooter("User ID: " + member.user.id)
-        	.setImage('https://i.imgur.com/rEBVonh.gif')
+        	.setImage('https://i.imgur.com/QDCNuem.gif')
         	.addFields(
         	  { name: "**\`User\`**", value: `${member}`, inline: true },
 			  { name: "**\`User Joined At\`**", value: `${moment().format("D/M/Y, h:mm")}`, inline: true },
@@ -41,16 +41,7 @@ client.on('guildMemberAdd', async member => {
 			welcomeChannel.send(`
 			> • **User:** ${member}
 			> • **User Joined By:** <@${usedInvite.inviter.id}>
-			> • **Number Of Uses:** ${usedInvite.uses}
-
-		≫ ・*If you want to be ready for our server.*
-		≫ ・**CHECK OUT**
-		♛▬▬▬▬▬▬▬▬▬▬◈▬▬▬▬▬▬▬▬▬▬♛
-		<a:6795_rainbowleft:729671060664090634>    <#736600436680687646>
-		<a:6795_rainbowleft:729671060664090634>    <#736600433921097789>
-		<a:6795_rainbowleft:729671060664090634>    <#736600435342835792>
-		♛▬▬▬▬▬▬▬▬▬▬◈▬▬▬▬▬▬▬▬▬▬♛
-			`)
+			> • **You Are The Member:** ${message.guild.memberCount}`)
 			welcomeChannel.send(embed).catch(err => console.log(err));
 			member.send(`
   ♛▬▬▬▬▬▬▬▬▬▬◈▬▬▬▬▬▬▬▬▬▬♛
@@ -70,7 +61,7 @@ client.on('guildMemberAdd', async member => {
 //status
 client.on("ready", () => {
 	function randomStatus() {
-	  let status = ["MAROC", "VALORANT", "WELCOME BOT"]
+	  let status = ["Welcome", "Doako", "WeNeverDie"]
 	  let rstatus = Math.floor(Math.random() * status.length);
   
 	  client.user.setActivity(status[rstatus], {type: "STREAMING", url: "https://www.twitch.tv/xdarwinx_"});
