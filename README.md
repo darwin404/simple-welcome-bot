@@ -1,1 +1,2 @@
-npm i discord.j\nnpm i moment
+npm i discord.j
+npm i moment
