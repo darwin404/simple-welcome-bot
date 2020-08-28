@@ -24,10 +24,10 @@ client.on('guildMemberAdd', async member => {
 		const usedInvite = newInvites.find(inv => cachedInvites.get(inv.code).uses < inv.uses);
 		
         const embed = new Discord.MessageEmbed()
-			.setColor("RANDOM")
+		.setColor("RANDOM")
         	.setTitle(`**WELCOME**`)
         	.setAuthor(member.user.tag, member.user.displayAvatarURL({format: "gif", format: "png", dynamic: true}))
-        	.setDescription(`${member} Welcome to **VALORANT MAROC** community, Also if you want to be ready for our server, Check out the important channels.`)
+        	.setDescription(`${member} if you want to be ready for our server, Check out the important channels.`)
         	.setThumbnail(member.user.displayAvatarURL({format: "gif", format: "png", dynamic: true, size: 1024}))
         	.setTimestamp()
         	.setFooter("User ID: " + member.user.id)
@@ -36,7 +36,7 @@ client.on('guildMemberAdd', async member => {
         	  { name: "**\`User\`**", value: `${member}`, inline: true },
 			  { name: "**\`User Joined At\`**", value: `${moment().format("D/M/Y, h:mm")}`, inline: true },
         	)
-        const welcomeChannel = member.guild.channels.cache.find(channel => channel.id === '742182260610039818');
+        const welcomeChannel = member.guild.channels.cache.find(channel => channel.id === 'welcome channel id');
         if(welcomeChannel) {
 			welcomeChannel.send(`
 			> • **User:** ${member}
@@ -60,13 +60,8 @@ client.on('guildMemberAdd', async member => {
 
 //status
 client.on("ready", () => {
-	function randomStatus() {
-	  let status = ["Welcome", "Doako", "WeNeverDie"]
-	  let rstatus = Math.floor(Math.random() * status.length);
-  
-	  client.user.setActivity(status[rstatus], {type: "STREAMING", url: "https://www.twitch.tv/xdarwinx_"});
-	}; setInterval(randomStatus, 5000)
-	
+	  let status = ["Welcome Bot By DARWIN"  
+	  client.user.setActivity(status, {type: "STREAMING", url: "https://www.twitch.tv/xdarwinx_"});	
   });
   
 
