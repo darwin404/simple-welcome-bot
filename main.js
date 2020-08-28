@@ -70,4 +70,4 @@ client.on("ready", () => {
   });
   
 
-client.login('NzM2MjEwMDg0OTQxNTI5MTky.XxrfEg.8EcLVu8k5i-KHPiZRnOgQRSQUUk');
+client.login('YOUR_TOP_SECRET_TOKEN');
