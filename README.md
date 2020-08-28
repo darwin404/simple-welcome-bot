@@ -1,2 +1,1 @@
-npm i discord.js
-npm i moment
+npm i discord.j\nnpm i moment
