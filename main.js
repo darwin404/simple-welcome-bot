@@ -60,7 +60,7 @@ client.on('guildMemberAdd', async member => {
 
 //status
 client.on("ready", () => {
-	  let status = ["Welcome Bot By DARWIN"  
+	  let status = ["Welcome Bot By DARWIN"]
 	  client.user.setActivity(status, {type: "STREAMING", url: "https://www.twitch.tv/xdarwinx_"});	
   });
   
